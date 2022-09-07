@@ -1,0 +1,60 @@
+@use "../helpers/variables.scss" as *;
+// FOOTER
+footer {
+  line-height: 1.7;
+  padding: 30px 0 10px;
+  font-size: 1.5rem;
+  color: #444;
+
+  // STATISTIC
+  .statistic {
+    width: 58%;
+    @media #{$mobail} {
+      width: 100%;
+      padding: 10px;
+    }
+    span {
+      @media #{$mobail} {
+        font-size: 2.5rem;
+      }
+      @media #{$medium} {
+        font-size: 2.5rem;
+      }
+      @media #{$large} {
+        font-size: 3rem;
+      }
+    }
+    .in {
+      color: $light-green;
+    }
+    .out {
+      color: #f5465d;
+    }
+    .interest {
+      color: $light-green;
+    }
+    .btn-sort {
+      cursor: pointer;
+      border: none;
+      transition: all 0.5s;
+      &:hover {
+        color: rgba(#444, 0.8);
+      }
+    }
+  }
+
+  // TIMING
+  .timing {
+    @media #{$mobail} {
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+    }
+    width: 40%;
+    text-align: right;
+    span {
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+  }
+}

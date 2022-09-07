@@ -1,0 +1,34 @@
+@use "../helpers/variables.scss" as *;
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #eee;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: auto;
+  padding: {
+    left: 15px;
+    right: 15px;
+  }
+  @media #{$small} {
+    width: 750px;
+  }
+  @media #{$medium} {
+    width: 970px;
+  }
+  @media #{$large} {
+    width: 1170px;
+  }
+}

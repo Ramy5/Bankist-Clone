@@ -1,0 +1,67 @@
+include helpers/variable.pug
+include helpers/mixin.pug
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Banklist Clone
+    include helpers/style.pug
+  body 
+    include layout/header.pug
+    .container
+      //- NOTE add hidden-op class
+      main(class="main hidden-op") 
+        //- START BALANCE
+        div(class="balance flex")
+          div
+            p(class="balance-label") Current balance
+            p(class="balance-date") As of <span class="date">  </span>
+          div 
+            p(class="balance-value") 
+
+        //- START CONTENT
+        div(class="content flex")
+          //- NOTE all of this will remove and added again by js
+          //- MOVEMENTS
+          div(class="movement")
+            //- fill with js file
+
+          //- OPERATION
+          div(class="operation flex")
+            //- TRANSFER
+            div(class="operate transfer")
+              h2(class="transfer-label") Transfer money
+              form(class="transfer-form flex")
+                input(class="transfer-to operation-input t-c" type="text")
+                input(class="transfer-amount operation-input t-c" type="number")
+                +button
+                label(class="t-c label") Transfer to
+                label(class="t-c label") Amount  
+
+            //- LOAN
+            div(class="operate loan")
+              h2(class="loan-label") Request loan
+              form(class="loan-form flex")
+                input(class="loan-amount operation-input t-c" type="number")
+                +button
+                label(class="t-c label") 
+                label(class="t-c label label-loan") Amount 
+
+            //- CLOSE ACCOUNT
+            div(class="operate close")
+              h2(class="close-label") Close account
+              form(class="close-form flex")
+                input(class="close-confirm-user operation-input t-c" type="text")
+                input(class="close-confirm-pin operation-input t-c" type="password" maxlength="4")
+                +button
+                label(class="t-c label label-close-1") Confirm User
+                label(class="t-c label label-close-2") Confirm PIN
+
+        //- START FOOTER
+        include layout/footer.pug
+
+    //- JS FILE
+    script(src="js/banklist.js")

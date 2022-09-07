@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banklist Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="shortcut icon" type="image/png" href="picture/icon.png">
+    <link rel="stylesheet" href="css/banklist.css">
+  </head>
+  <body> 
+    <header class="flex"> 
+      <h2 class="start">Log in to get started</h2><img class="logo" src="picture/logo.png" alt="logo">
+      <form class="form-header flex">
+        <input class="login t-c login--user" type="text" placeholder="User">
+        <input class="login t-c login--pin" type="password" placeholder="PIN" maxlength="4">
+        <button class="btn login-btn">&rarr;</button>
+        <div class="wrong-label flex">
+          <label class="wrong-p hidden">Wrong User or PIN, Try again! </label>
+        </div>
+      </form>
+    </header>
+    <div class="container">
+      <main class="main hidden-op"> 
+        <div class="balance flex">
+          <div>
+            <p class="balance-label">Current balance</p>
+            <p class="balance-date">As of <span class="date">  </span></p>
+          </div>
+          <div> 
+            <p class="balance-value"> </p>
+          </div>
+        </div>
+        <div class="content flex">
+          <div class="movement"></div>
+          <div class="operation flex">
+            <div class="operate transfer">
+              <h2 class="transfer-label">Transfer money</h2>
+              <form class="transfer-form flex">
+                <input class="transfer-to operation-input t-c" type="text">
+                <input class="transfer-amount operation-input t-c" type="number">
+                <button class="btn login-btn">&rarr;</button>
+                <label class="t-c label">Transfer to</label>
+                <label class="t-c label">Amount  </label>
+              </form>
+            </div>
+            <div class="operate loan">
+              <h2 class="loan-label">Request loan</h2>
+              <form class="loan-form flex">
+                <input class="loan-amount operation-input t-c" type="number">
+                <button class="btn login-btn">&rarr;</button>
+                <label class="t-c label"> </label>
+                <label class="t-c label label-loan">Amount </label>
+              </form>
+            </div>
+            <div class="operate close">
+              <h2 class="close-label">Close account</h2>
+              <form class="close-form flex">
+                <input class="close-confirm-user operation-input t-c" type="text">
+                <input class="close-confirm-pin operation-input t-c" type="password" maxlength="4">
+                <button class="btn login-btn">&rarr;</button>
+                <label class="t-c label label-close-1">Confirm User</label>
+                <label class="t-c label label-close-2">Confirm PIN</label>
+              </form>
+            </div>
+          </div>
+        </div>
+        <footer class="flex"> 
+          <div class="statistic flex">
+            <div class="statist statist-in">IN <span class="in"></span> </div>
+            <div class="statist statist-out">OUT <span class="out"></span> </div>
+            <div class="statist statist-interest">INTEREST <span class="interest"></span> </div>
+            <button class="btn-sort">&downarrow; SORT</button>
+          </div>
+          <div class="timing">You will be logged out in <span class="time-out"></span></div>
+        </footer>
+      </main>
+    </div>
+    <script src="js/banklist.js"></script>
+  </body>
+</html>

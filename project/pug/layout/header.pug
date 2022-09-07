@@ -1,0 +1,10 @@
+//- start header
+header(class="flex") 
+  h2(class="start") Log in to get started
+  img(class="logo" src="picture/logo.png" alt="logo")
+  form(class="form-header flex")
+    input(class="login t-c login--user" type="text" placeholder="User")
+    input(class="login t-c login--pin" type="password" placeholder="PIN" maxlength="4")
+    +button
+    div(class="wrong-label flex")
+      label(class="wrong-p hidden") Wrong User or PIN, Try again! 

@@ -1,0 +1,44 @@
+@use "../helpers/mixin.scss" as *;
+@use "../helpers/variables.scss" as *;
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.t-c {
+  text-align: center;
+}
+.btn {
+  @include btn(transparent);
+  &:hover {
+    background-color: $light-green;
+    color: #fff;
+  }
+}
+.operation-input {
+  border: none;
+  padding: 0.6rem 1rem;
+  color: #333;
+  border-radius: 8px;
+  background-color: rgba(#fff, 0.4);
+  font-size: 1.5rem;
+  transition: all 0.5s;
+  width: 100%;
+  &:focus {
+    outline: none;
+    background-color: rgba(#fff, 0.6);
+  }
+}
+.label {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  color: #333;
+  font-weight: 500;
+}
+.hidden {
+  display: none;
+}
+.hidden-op {
+  opacity: 0;
+}
