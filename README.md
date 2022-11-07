@@ -1,4 +1,5 @@
 # Bankist-Clone (Focus On Array)
+NOTE => I'm just focus on Array in this project, Don't divide js files like here in the project but instead should use module.
 Simulate the bank, Transfer money from one account to another, Loan the money from the bank, Calculate and show the balance, and more!
 
 ## Table of Contents
