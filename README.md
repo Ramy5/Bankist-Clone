@@ -1,5 +1,5 @@
 # Bankist-Clone (Focus On Array)
-Simulate the bank, Transfer money from one account to another, Loan money, Calculate and show the balance, and more!
+Simulate the bank, Transfer money from one account to another, Loan the money from the bank, Calculate and show the balance, and more!
 
 ## Table of Contents
 - <a href="#information">Information</a>
@@ -9,12 +9,12 @@ Simulate the bank, Transfer money from one account to another, Loan money, Calcu
 
 <h2 id="information">Information</h2>
 <ul>
-  <li>Transfering money from account to another.</li>
+  <li>Transfering money from one account to another.</li>
   <li>Loan money from the bank.</li>
   <li>Calculating the balance.</li>
   <li>Showing the date for all operations.</li>
-  <li>Sorting the money movement when click on the sort button.</li>
-  <li>Calculating the money that out from account (Withdrawl) and the money that it come to account (Deposite).</li>
+  <li>Sorting the money movement when clicking on the sort button.</li>
+  <li>Calculating the money that out from the account (Withdrawl) and the money that comes to the account (Deposite).</li>
 </ul>
 
 <h2 id="instructure">Instructure</h2>
